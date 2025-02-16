@@ -7,48 +7,65 @@ class Program
     static void Main(string[] args)
     {
         Console.WriteLine("Hello World! This is the YouTubeVideos Project.");
-        
-        List<string> comments = new List<string>();
-        
-    // Comment class to track the name of the commenter and the text of the comment
-    public class Comment
+      
+        public class Video
+{
+    public string Title { get; set; }
+    public string Author { get; set; }
+    public int Length { get; set; }
+    private List comments = new List();
+}
+
+    public void AddComment(Comment comment)
     {
-    public string CommenterName { get; set; }
-    public string CommentText { get; set; }
+        comments.Add(comment);
     }
 
-       // Video class to track title, author, length, comments
-       public class Video
-       {
-          public string Title { get; set; }
-          public string Author { get; set; }
-         public int LengthInSeconds { get; set; }
-         public List Comments { get; set; }
+    public int GetNumberOfComments()
+    {
+        return comments.Count;
+    }
 
-         public Video(string title, string author, int length)
-         {
-         Title = title;
-         Author = author;
-         LengthInSeconds = length;
-         Comments = new List();
-         }
+    public List GetComments()
+    {
+        return comments;
+    }public class Comment
+{
+    public string CommenterName { get; set; }
+    public string Text { get; set; }
 
-         public int GetNumberOfComments()
-         {
-        return Comments.Count;
-         }
-         }
+    class Program
+{
+    static void Main()
+    {
+        // Create videos
+        Video video1 = new Video { Title = "Video 1", Author = "Author 1", Length = 120 };
+        Video video2 = new Video { Title = "Video 2", Author = "Author 2", Length = 180 };
+        Video video3 = new Video { Title = "Video 3", Author = "Author 3", Length = 150 };
 
-         class Program
-         {
-         static void Main()
-         {
-             List
+        // Add comments to videos
+        video1.AddComment(new Comment { CommenterName = "UserA", Text = "Great video!" });
+        video1.AddComment(new Comment { CommenterName = "UserB", Text = "Interesting content." });
+        video1.AddComment(new Comment { CommenterName = "UserC", Text = "I learned a lot." });
+
+        video2.AddComment(new Comment { CommenterName = "ViewerX", Text = "Nice job!" });
+        video2.AddComment(new Comment { CommenterName = "ViewerY", Text = "Liked the examples." });
+
+        video3.AddComment(new Comment { CommenterName = "Person1", Text = "Well explained." });
+        video3.AddComment(new Comment { CommenterName = "Person2", Text = "Informative." });
+
+        // Create a list of videos
+        List
 
 
 
-         }
-     } 
+}
+
+
+
+    }
+
+}
 
     }
 
