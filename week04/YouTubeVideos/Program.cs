@@ -8,36 +8,6 @@ class Program
     {
         Console.WriteLine("Hello World! This is the YouTubeVideos Project.");
       
-        public class Video
-{
-    public string Title { get; set; }
-    public string Author { get; set; }
-    public int Length { get; set; }
-    private List comments = new List();
-}
-
-    public void AddComment(Comment comment)
-    {
-        comments.Add(comment);
-    }
-
-    public int GetNumberOfComments()
-    {
-        return comments.Count;
-    }
-
-    public List GetComments()
-    {
-        return comments;
-    }public class Comment
-{
-    public string CommenterName { get; set; }
-    public string Text { get; set; }
-
-    class Program
-{
-    static void Main()
-    {
         // Create videos
         Video video1 = new Video { Title = "Video 1", Author = "Author 1", Length = 120 };
         Video video2 = new Video { Title = "Video 2", Author = "Author 2", Length = 180 };
@@ -54,22 +24,46 @@ class Program
         video3.AddComment(new Comment { CommenterName = "Person1", Text = "Well explained." });
         video3.AddComment(new Comment { CommenterName = "Person2", Text = "Informative." });
 
-        // Create a list of videos
-        List
-
-
-
-}
-
-
-
+        // Print out video information and comments
+        Console.WriteLine("Video Information:");
+        Console.WriteLine($"Title: {video1.Title}");
+        Console.WriteLine($"Author: {video1.Author}");
+        Console.WriteLine($"Length: {video1.Length} seconds");
+        Console.WriteLine("Comments:");
+        foreach (var comment in video1.GetComments())
+        {
+            Console.WriteLine($"- {comment.CommenterName}: {comment.Text}");
+        }
+        
+        Console.WriteLine();
+        
+        Console.WriteLine("Video Information:");
+        Console.WriteLine($"Title: {video2.Title}");
+        Console.WriteLine($"Author: {video2.Author}");
+        Console.WriteLine($"Length: {video2.Length} seconds");
+        Console.WriteLine("Comments:");
+        foreach (var comment in video2.GetComments())
+        {
+            Console.WriteLine($"- {comment.CommenterName}: {comment.Text}");
+        }
+        
+        Console.WriteLine();
+        
+        Console.WriteLine("Video Information:");
+        Console.WriteLine($"Title: {video3.Title}");
+        Console.WriteLine($"Author: {video3.Author}");
+        Console.WriteLine($"Length: {video3.Length} seconds");
+        Console.WriteLine("Comments:");
+        foreach (var comment in video3.GetComments())
+        {
+            Console.WriteLine($"- {comment.CommenterName}: {comment.Text}");
+        }
     }
-
 }
 
-    }
+    
 
-}
+
 
 
 
