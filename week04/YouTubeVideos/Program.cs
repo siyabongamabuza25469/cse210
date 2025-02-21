@@ -68,14 +68,13 @@ namespace YouTubeVideosProject
         public string Title { get; set; }
         public string Author { get; set; }
         public int Length { get; set; }
-        private List comments = new List();
-
+        private List<Comment> comments = new List<Comment>();
         public void AddComment(Comment comment)
         {
             comments.Add(comment);
         }
 
-        public List GetComments()
+        public List<Comment> GetComments()
         {
             return comments;
         }
