@@ -18,7 +18,7 @@ namespace YouTubeVideosProject
             // Add comments to videos
             video1.AddComment(new Comment { CommenterName = "UserA", Text = "Great video!" });
             video1.AddComment(new Comment { CommenterName = "UserB", Text = "Interesting content." });
-            video1.AddComment(new Comment { CommenterName = "UserC", Text = "I learned a lot." });
+            video1.AddComment(new Comment { CommenterName = "UserC", Text = "I learn a lot." });
 
             video2.AddComment(new Comment { CommenterName = "ViewerX", Text = "Nice job!" });
             video2.AddComment(new Comment { CommenterName = "ViewerY", Text = "Liked the examples." });
