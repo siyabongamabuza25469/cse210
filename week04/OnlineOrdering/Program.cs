@@ -6,16 +6,16 @@ namespace OnlineOrderingProject
 {
 public class Product
 {
-static void Main(string[] args)
-{
+    static void Main(string[] args)
+    {
 
     Console.WriteLine("Hello World! This is the OnlineOrdering Project.");
-}
+    }
 
     private string productName;
     private int productID;
     private decimal productPrice;
-    private int ProductQuality;
+    private int productQuantity;
 
     public string Name { get; set; }
     public int ProductId { get; set; }
@@ -109,13 +109,6 @@ public class Order
     {
         return $"Shipping Label:\n{customer.Name}\n{customer.Address.GetFullAddress()}";
     }
-    }
-
 }
 
-
-
-
-
-
-  
+}
