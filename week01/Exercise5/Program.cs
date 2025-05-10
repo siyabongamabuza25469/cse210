@@ -5,7 +5,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello world this is the Exercise2 Project!");
+        Console.WriteLine("Hello world this is the Exercise5 Project!");
 
         string userName = PromptUserName();
         int userNumber = PromptUserNumber ();
