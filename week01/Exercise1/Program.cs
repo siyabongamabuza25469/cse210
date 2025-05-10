@@ -4,7 +4,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello World1! This is the Exercise1 Project.");
+        Console.WriteLine("Hello World1! This is the Exercise 1 Project.");
 
         Console.Write("What is your first name?");
         string first = Console.ReadLine();
