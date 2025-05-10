@@ -9,7 +9,7 @@ class Program
 
         List<int> numbers = new List<int>();
 
-        // Using a do-while loop 
+        // Using a do-while loop step
         int userNumber = -1;
         while(userNumber != 0)
         {
