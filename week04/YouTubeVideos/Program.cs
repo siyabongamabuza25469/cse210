@@ -69,7 +69,7 @@ namespace YouTubeVideosProject
         public string Author { get; set; }
         public int Length { get; set; }
         private List<Comment> comments = new List<Comment>();
-        public void AddComment(Comment comment)
+        public void AddComments(Comment comment)
         {
             comments.Add(comment);
         }
