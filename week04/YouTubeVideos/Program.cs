@@ -10,23 +10,23 @@ namespace YouTubeVideosProject
         {
             Console.WriteLine("Hello World! This is the YouTubeVideos Project.");
 
-            // Create videos
+            
             Video video1 = new Video { Title = "Video 1", Author = "Author 1", Length = 120 };
             Video video2 = new Video { Title = "Video 2", Author = "Author 2", Length = 180 };
             Video video3 = new Video { Title = "Video 3", Author = "Author 3", Length = 150 };
 
-            // Add comments to videos
-            video1.AddComment(new Comment { CommenterName = "UserA", Text = "Great video!" });
-            video1.AddComment(new Comment { CommenterName = "UserB", Text = "Interesting content." });
-            video1.AddComment(new Comment { CommenterName = "UserC", Text = "I learn a lot." });
+            
+            video1.AddComments(new Comment { CommenterName = "UserA", Text = "Great video!" });
+            video1.AddComments(new Comment { CommenterName = "UserB", Text = "Interesting content." });
+            video1.AddComments(new Comment { CommenterName = "UserC", Text = "I learn a lot." });
 
-            video2.AddComment(new Comment { CommenterName = "ViewerX", Text = "Nice job!" });
-            video2.AddComment(new Comment { CommenterName = "ViewerY", Text = "Liked the examples." });
+            video2.AddComments(new Comment { CommenterName = "ViewerX", Text = "Nice job!" });
+            video2.AddComments(new Comment { CommenterName = "ViewerY", Text = "Liked the examples." });
 
-            video3.AddComment(new Comment { CommenterName = "Person1", Text = "Well explained." });
-            video3.AddComment(new Comment { CommenterName = "Person2", Text = "Informative." });
+            video3.AddComments(new Comment { CommenterName = "Person1", Text = "Well explained." });
+            video3.AddComments(new Comment { CommenterName = "Person2", Text = "Informative." });
 
-            // Print out video information and comments
+            
             Console.WriteLine("Video Information:");
             Console.WriteLine($"Title: {video1.Title}");
             Console.WriteLine($"Author: {video1.Author}");
