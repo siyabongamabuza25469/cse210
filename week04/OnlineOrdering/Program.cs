@@ -90,7 +90,7 @@ public class Order
             totalCost += product.GetTotalCost();
         }
 
-        return totalCost + (customer.IsInUSA() ? 5 : 35); // Shipping costs
+        return totalCost + (customer.IsInUSA() ? 5 : 35);
     }
 
     public string GetPackingLabel()
