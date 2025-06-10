@@ -8,7 +8,7 @@ namespace EternalQuestProject
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello World! This is the EternalQuest Project.");
+        Console.WriteLine("Hello World!This is the EternalQuest Project.");
     }
 
      public string Name { get; set; }
